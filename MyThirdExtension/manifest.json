@@ -1,0 +1,15 @@
+{
+    "name": "My Third Browser Action",
+    "description": "Content Scripts Test!",
+    "version": "0.1",
+    "manifest_version": 2,
+    "permissions": [
+        "tabs", "http://dotinstall.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["http://dotinstall.com/*"],
+            "js": ["dotinstall.js"]
+        }
+    ]
+}
