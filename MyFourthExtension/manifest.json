@@ -1,0 +1,13 @@
+{
+    "name": "My Fourth Browser Action",
+    "description": "Twitter 検索 Context Menu",
+    "version": "0.1",
+    "manifest_version": 2,
+    "permissions": [
+        "tabs", "http://*/*", "contextMenus"
+    ],
+    "icons": {
+        "16": "icon16.png"
+    },
+    "background": { "scripts": ["background.js"] }
+}
