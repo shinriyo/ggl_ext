@@ -1,0 +1,17 @@
+{
+    "name": "Booklog Extension",
+    "description": "Booklog useful tool",
+    "version": "0.1",
+    "icons": { "48": "icon48.png",
+              "128": "icon128.png" },
+    "manifest_version": 2,
+    "permissions": [
+        "tabs", "http://booklog.jp/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["http://booklog.jp/*"],
+            "js": ["jquery-1.8.3.min.js", "jquery.xdomainajax.js", "booklog.js"]
+        }
+    ]
+}
