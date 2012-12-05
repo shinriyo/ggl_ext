@@ -1,17 +1,17 @@
 {
-    "name": "Unity Extension",
+    "name": "Aipo+ Extension",
     "description": "Save Unity Documents language setting",
-    "version": "0.2",
+    "version": "0.1",
     "icons": { "48": "icon48.png",
               "128": "icon128.png" },
     "manifest_version": 2,
     "permissions": [
-        "tabs", "http://docs.unity3d.com/*"
+        "tabs", "https://app.aipo.com/*"
     ],
     "content_scripts": [
         {
-            "matches": ["http://docs.unity3d.com/*"],
-            "js": ["jquery-1.8.3.min.js", "unity.js"]
+            "matches": ["https://app.aipo.com/*"],
+            "js": ["jquery-1.8.3.min.js", "aipo.js"]
         }
     ]
 }
