@@ -18,7 +18,7 @@ var getNowThelf = function(tagHash) {
         var titleStr = $(this).text();
         var tagStr = tagHash[titleStr]
         if (tagStr !== undefined) {
-            $(this).text(titleStr + ' [Tag:' + tagStr +']');
+            $(this).text(titleStr + ' [タグ: ' + tagStr +']');
         }
     });
 }
